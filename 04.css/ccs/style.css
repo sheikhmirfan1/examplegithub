@@ -1,8 +1,87 @@
-h1{
-    border: 5px solid rgb(14, 13, 13);
-        font font-size: 60px;;
-        background-color: red;
-        padding: 20px;
-        margin: 20px;
+body{
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sticky{
+    position: sticky;
+    top: 0px;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    background-color: antiquewhite;
+}
+li{
+    padding: 8px;
+}
+.section-float{
+    background-color: aqua;
+}
+.float-1{
+    float: left;
+   
+}
+.float-2{
+    float: right;
+}
 
+.section-float div{
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+    border: 1px solid black;
+}
+.position{
+    
+    background-color: yellowgreen;
+}
+/* 
+Position values:
+    - static - default
+    - relative - gives you access to: top, bottom, left, right; will move
+      relative to its position in the normal flow of the document
+    - absolute - gives you access to: top, bottom, left, right; will move relative
+      to its parent container (that is not static), if no parent not static will move according to html
+    - fixed - gives you access to: top, bottom, left, right; will not move relative to any element, rather will stay 
+      fixed even when scrolling on the page. fixed relative to the the viewport
+    - sticky - gives you access to: top, bottom, left, right; mix between fixed and relative - initially moves
+        with normal flow and then sticks when user scrolls to the position given
+*/
+.container{
+    position: static;
+    border: 2px solid black;
+    width: 500px;
+    height: 500px;
+}
+.box-1{
+position: relative;
+top: 30px;
+left: 80px;
+/* bottom: 30px; */
+width: 100px;
+height: 100px;
+background-color: brown;
+}
+.box-2{
+position: relative;
+top: 30px;
+left: 80px;
+width: 100px;
+height: 100px;
+background-color: lightblue;
+}
+.box-3{
+width: 100px;
+height: 100px;
+background-color:gold;
+}
+.fixed-position{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 100px;
+    height: 30px;
+    background-color: violet;
 }
